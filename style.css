@@ -1,0 +1,313 @@
+/* Basic styling for Pinku's portfolio */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #4d8ede;
+    color: white;
+}
+
+.header {
+    background-color: #112d25;
+    padding: 18px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h2 {
+    margin: 0;
+    color: #68e0c0;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin-left: 18px;
+}
+
+.menu a:hover {
+    color: #68e0c0;
+}
+
+.intro {
+    padding: 55px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.intro-text {
+    max-width: 600px;
+}
+
+.small-title {
+    color: #68e0c0;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+h1 {
+    font-size: 42px;
+}
+
+h1 span {
+    color: #68e0c0;
+}
+
+.intro-text p {
+    line-height: 1.7;
+    color: #c4cde0;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 11px 18px;
+    background-color: #68e0c0;
+    color: #071411;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.photo-box {
+    width: 250px;
+    padding: 15px;
+    background-color: #1050db;
+    border: 1px solid #293752;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.photo-box img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.photo-box p {
+    color: #c4cde0;
+}
+
+.section {
+    padding: 25px 6%;
+}
+
+.section h2 {
+    color: #68e0c0;
+}
+
+.card {
+    background-color: #111a2d;
+    border: 1px solid #293752;
+    border-radius: 12px;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.card p {
+    color: #c4cde0;
+}
+
+.cards {
+    display: flex;
+    gap: 15px;
+}
+
+.cards .card {
+    flex: 1;
+}
+
+.note {
+    color: #aab6ce;
+    font-size: 14px;
+}
+
+.project-box {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 15px;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 5px;
+    color: #c4cde0;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #293752;
+    border-radius: 7px;
+    background-color: #0b1020;
+    color: white;
+}
+
+button {
+    margin-top: 15px;
+    padding: 11px 15px;
+    background-color: #68e0c0;
+    color: #071411;
+    border: none;
+    border-radius: 7px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #48c5a5;
+}
+
+#message {
+    color: #ffcf70;
+}
+
+#result {
+    color: #68e0c0;
+}
+
+table {
+    width: 100%;
+    margin-top: 12px;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 9px 5px;
+    text-align: left;
+    border-bottom: 1px solid #293752;
+}
+
+th {
+    color: #68e0c0;
+}
+
+a {
+    color: #68e0c0;
+}
+
+.footer {
+    margin-top: 25px;
+    padding: 18px;
+    text-align: center;
+    background-color: #111a2d;
+    color: #aab6ce;
+}
+
+/* Make the page fit on phones too */
+@media screen and (max-width: 700px) {
+    .header {
+        display: block;
+    }
+
+    .menu {
+        margin-top: 12px;
+    }
+
+    .menu a {
+        margin-left: 0;
+        margin-right: 12px;
+    }
+
+    .intro {
+        display: block;
+    }
+
+    .photo-box {
+        margin-top: 30px;
+    }
+
+    .cards {
+        display: block;
+    }
+
+    .cards .card {
+        margin-bottom: 12px;
+    }
+
+    .project-box {
+        display: block;
+    }
+
+    .project-box .card {
+        margin-bottom: 15px;
+    }
+
+    h1 {
+        font-size: 34px;
+    }
+}
+
+
+/* Attendance summary and tracker buttons */
+.light-button {
+    margin-left: 5px;
+    background-color: #26344d;
+    color: white;
+    border: 1px solid #40506b;
+}
+
+.light-button:hover {
+    background-color: #354765;
+}
+
+.summary {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.summary-box {
+    flex: 1;
+    padding: 10px;
+    background-color: #0b1020;
+    border: 1px solid #293752;
+    border-radius: 8px;
+}
+
+.summary-box small {
+    color: #aab6ce;
+}
+
+.summary-box h3 {
+    color: #68e0c0;
+    margin: 5px 0 0;
+}
+
+.target-good {
+    color: #68e0c0;
+    font-weight: bold;
+}
+
+.target-low {
+    color: #ffcf70;
+    font-weight: bold;
+}
+
+.remove-button {
+    margin-top: 0;
+    padding: 6px 9px;
+    background-color: #49303a;
+    color: white;
+}
+
+@media screen and (max-width: 700px) {
+    .summary {
+        display: block;
+    }
+
+    .summary-box {
+        margin-bottom: 8px;
+    }
+
+    .light-button {
+        margin-left: 0;
+        margin-right: 4px;
+    }
+}

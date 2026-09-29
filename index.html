@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pinku Yadav - Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="header">
+        <h2>Pinku Yadav</h2>
+        <div class="menu">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#project">Project</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+
+    <div class="intro">
+        <div class="intro-text">
+            <p class="small-title">CSE AIML STUDENT</p>
+            <h1>Hello, I am <span>Pinku Yadav</span></h1>
+            <p>
+                I am a student at KIET Deemed to be University.
+                I am a beginner in coding and I am learning programming
+                and web development step by step.
+            </p>
+            <a class="button" href="#project">See My Project</a>
+        </div>
+
+        <div class="photo-box">
+            <img src="pinku-photo.jpg" alt="Pinku Yadav">
+            <p>Student | Learner | Beginner</p>
+        </div>
+    </div>
+
+    <div class="section" id="about">
+        <h2>About Me</h2>
+        <div class="card">
+            <p>
+                My name is Pinku Yadav. I study CSE with Artificial Intelligence
+                and Machine Learning at KIET Deemed to be University.
+                I am interested in technology and want to learn how websites
+                and software are made.
+            </p>
+        </div>
+    </div>
+
+    <div class="section" id="skills">
+        <h2>My Skills</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Programming</h3>
+                <p>Learning basic coding and problem solving.</p>
+            </div>
+            <div class="card">
+                <h3>HTML</h3>
+                <p>Learning how to make the structure of a web page.</p>
+            </div>
+            <div class="card">
+                <h3>CSS</h3>
+                <p>Learning how to style a website and make it look good.</p>
+            </div>
+        </div>
+        <p class="note">These are learning topics. I will add more skills as I improve.</p>
+    </div>
+
+    <div class="section" id="project">
+        <h2>My Project</h2>
+        <div class="project-box">
+            <div class="card">
+                <h3>Class Attendance Calculator</h3>
+                <p>
+                    This is a simple project that calculates attendance
+                    percentage for a subject. The user enters the number
+                    of classes held and classes attended.
+                </p>
+                <p><b>Formula:</b> Attendance = (Attended Classes / Total Classes) x 100</p>
+                <p><b>Made with:</b> HTML, CSS and JavaScript</p>
+            </div>
+
+            <div class="card">
+                <h3>Try the Calculator</h3>
+                <label for="subject">Subject name</label>
+                <input type="text" id="subject" placeholder="Example: Maths">
+
+                <label for="total">Total classes held</label>
+                <input type="number" id="total" placeholder="Example: 10">
+
+                <label for="attended">Classes attended</label>
+                <input type="number" id="attended" placeholder="Example: 8">
+
+                <button onclick="addAttendance()">Add / Update Subject</button>
+                <button class="light-button" onclick="loadExample()">Load Example</button>
+                <button class="light-button" onclick="clearAttendance()">Clear All</button>
+                <p id="message"></p>
+
+                <div class="summary">
+                    <div class="summary-box">
+                        <small>Subjects</small>
+                        <h3 id="subject-count">0</h3>
+                    </div>
+                    <div class="summary-box">
+                        <small>Overall Attendance</small>
+                        <h3 id="overall-result">--</h3>
+                    </div>
+                    <div class="summary-box">
+                        <small>Target</small>
+                        <h3>75%</h3>
+                    </div>
+                </div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Subject</th>
+                            <th>Attended / Total</th>
+                            <th>Percentage</th>
+                            <th>Target</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="attendance-list">
+                        <tr><td colspan="5">No subjects added yet.</td></tr>
+                    </tbody>
+                </table>
+                <p class="note">Demo data stays in the page while it is open. Refreshing clears the entries.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section" id="contact">
+        <h2>Contact Me</h2>
+        <div class="card">
+            <p>Email: <a href="mailto:yadav565.py@gmail.com">yadav565.py@gmail.com</a></p>
+            <p>College: KIET Deemed to be University</p>
+            <p>Branch: CSE AIML</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Made by Pinku Yadav | Student Portfolio</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
