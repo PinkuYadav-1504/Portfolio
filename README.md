@@ -5,7 +5,7 @@
 
 💡 Passionate About: Building clean UI/UX and writing maintainable code
 
-📫 How to reach me: your.email@example.com
+📫 How to reach me: yadav565.py@gmail.com
 
 🛠️ Tech Stack & Tools
 Frontend
